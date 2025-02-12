@@ -1,0 +1,48 @@
+version: "1.0"
+ 
+services:
+  web:
+    image: argenestel/kali-linux-desktop
+    user: root
+    expose:
+      - port: 6901
+        as: 6901
+        to:
+          - global: true
+      - port: 5901
+        as: 5901
+        to:
+          - global: true
+      - port: 4901
+        as: 4901
+        to:
+          - global: true
+    env:
+      - TEST=test
+      - VNC_PW=password
+profiles:
+  name: kali-linux
+  duration: 1h
+  mode: fizz # or 'fizz' for Fizz Mode
+  tier:
+    - community
+  compute:
+    web:
+      resources:
+        cpu:
+          units: 4
+        memory:
+          size: 8Gi
+        storage:
+          size: 100Gi
+  placement:
+    westcoast:
+      pricing:
+        web:
+          token: CST
+          amount: 0.1
+deployment:
+  web:
+    westcoast:
+      profile: web
+      count: 1
