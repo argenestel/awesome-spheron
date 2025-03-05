@@ -42,6 +42,16 @@ This repository contains a collection of ready-to-deploy GPU application templat
    - Pre-installed Unsloth Jupyter notebook
    - Helpful for trying out finetuning using the Unsloth library
 
+## Consumer Images
+
+8. [**Play Games on Spheron**](./cloud-gaming)
+  - With latest steam os image and bottles
+  - Play any game you want
+
+9. [**Temporary Pentest Practice Box**]()
+  - Play Hack the box and Try hack me with all available tools
+
+
 ## Getting Started
 
 To use these templates:
