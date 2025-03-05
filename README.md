@@ -45,11 +45,11 @@ This repository contains a collection of ready-to-deploy GPU application templat
 ## Consumer Images
 
 8. [**Play Games on Spheron**](./cloud-gaming)
-  - With latest steam os image and bottles
-  - Play any game you want
+    - With latest steam os image and bottles
+    - Play any game you want
 
 9. [**Temporary Pentest Practice Box**]()
-  - Play Hack the box and Try hack me with all available tools
+    - Play [hackthebox.com](https://hackthebox.com) and [tryhackme.com](https://tryhackme.com) with all available tools
 
 
 ## Getting Started
